@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Source+Sans+Pro&display=swap');
+
+:root{
+    --color1: #d61f69;
+    --color2: #f17eb8 ;
+    --color3: #9fa6b2;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body{
+    /* height: 100%;
+    width: 100%; */
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    /* background: url(/img/3.webp) no-repeat center/cover; */
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/3.webp) center
+    center/cover;
+    /* background-size: 110%; */
+    /* background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)) */
+}
+
+header{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 7rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+header .navbar{
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar li {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+header .navbar li a{
+    font-size: 1.1rem;
+    color: var(--color3);
+}
+
+header button{
+    font-size: 1.1rem;
+    padding: 10px 14px;
+    background: transparent;
+    border: 1px solid var(--color3);
+    color: var(--color3);
+    border-radius: 7px;   
+    cursor: pointer;
+}
+
+header .navbar li a:hover{
+    color: #fff;
+    transition: .2s linear;
+}
+
+
+header button:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: .2s linear;
+}
+
+main{
+    height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .container{
+    flex-basis: 40%;
+    margin-right: 30rem;
+}
+
+main .container .content{
+    height: 30vh;
+    /* width: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.content h3{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.content #first{
+    color: var(--color2);
+    
+}
+
+.content #second{
+    color: #fff;
+   
+}
+
+.content button{
+    color: #333;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: .8rem 1.2rem;
+    outline: none;
+    border: none;
+}
+
+#btn1{
+    color: #fff;
+    background-color: var(--color1);
+}
+
+#btn2{
+    margin-left: .8rem;
+}
+
+.content button:hover{
+    cursor: pointer;
+}
+
+.content #btn1:hover{
+    /* background-color: var(--color2); */
+    background-color: #e95ca2;
+    transition: .2s linear;
+}
+
+.content #btn2:hover{
+    /* background-color: var(--color2); */
+    color: #64676d;
+    transition: .2s linear;
+}

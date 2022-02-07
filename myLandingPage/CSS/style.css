@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+:root {
+    --green: #009a9c;
+    --pink: #bc5758;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url(/img/green.png)no-repeat center center/cover;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* color: #333; */
+    /* box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); */
+}
+
+header .logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: var(--green);
+}
+
+header .navbar {
+    margin-left: 58rem;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+header .navbar ul li a {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 0 1.5rem 0 2.5rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+    transition: all .2s linear;
+    color: var(--green);
+    background-color: #fff;
+    letter-spacing: .2rem;
+}
+
+header .box {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+
+}
+
+header .box1:hover {
+    transform: scale(110%);
+}
+
+header .box2:hover {
+    transform: scale(110%);
+}
+
+header .box3:hover {
+    transform: scale(110%);
+}
+
+header .box1 {
+    display: flex;
+    background-color: #fff;
+    margin: 0 1rem;
+    margin-right: .5rem;
+    padding: 1.1rem;
+    border-radius: .5rem;
+}
+
+header .box3 {
+    display: flex;
+    background-color: #fff;
+    margin: 0 1rem;
+    margin-right: .5rem;
+    padding: 1.1rem;
+    border-radius: .5rem;
+}
+
+header .box2 {
+    display: flex;
+    background-color: #fff;
+    margin: 0 1rem;
+    margin-right: .5rem;
+    padding: 1.1rem;
+    border-radius: .5rem;
+
+}
+
+header label {
+    color: var(--green);
+    font-size: 3rem;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+header input {
+    display: none;
+}
+
+section .container {
+    /* width: 100%;  */
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .content {
+    margin-left: 12rem;
+}
+
+section .content h2 {
+    /* margin-top: -20rem; */
+    padding-top: 2rem ;
+    color: var(--pink);
+    min-width: 30vw;
+    font-size: 6rem;
+    /* font-weight: 0%; */
+}
+
+section .content h3 {
+    /* border-top: .2rem solid #333; */
+    border-bottom: .2rem solid var(--green);
+    padding: 1rem 0;
+    padding-bottom: 1.5rem;
+    color: var(--green);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+section .content p{
+    color: var(--pink);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    border-bottom: .2rem solid var(--green);
+}
+
+section .image {
+    height: 100vh;
+    width: 65vw;
+}
+
+section .content .icons{
+    position: absolute;
+    bottom: 4rem;
+}
+
+section .content .icons a{
+    font-size: 3rem;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: var(--pink);
+}
+
+section .content .icons a:hover{
+    color: var(--green);
+    transform: scale(110%);
+}
