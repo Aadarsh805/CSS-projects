@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto' , sans-serif;
+    margin: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.hero-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(/img/dom-hill-nimElTcTNyY-unsplash-removebg-preview\ \(1\).png) no-repeat 52% 0;
+    background-size: 150vh;
+    background-color: #E8BA60;
+    z-index: -2;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+    align-items: center;
+}
+
+header svg{
+    width: 3em;
+}
+
+.logo {
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    display: none;
+}
+
+.search{
+    display: none;
+}
+
+.search input{
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 70px;
+}
+
+input::placeholder{
+    color: #000;
+}
+
+.search img{
+    width: 1em;
+}
+
+.main .image{
+    display: none;
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+    background-color: #E8BA60;
+}
+
+
+
+.main {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-transform: uppercase;
+}
+
+.main .content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    margin-top: 1em;
+}
+.main .content h2{
+    width: 5em;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    letter-spacing: -3px;
+    color: #000;
+}   
+
+.content p{
+    width: 15em;
+    font-weight: 400;
+    color: #000;
+    line-height: 20px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}   
+
+.content .discount{
+    margin-top: -4rem;
+    display: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: -.5rem;
+}
+
+.content .discount div{
+    display: inline-block;
+    width: 5rem;
+    height: 2px;
+    margin-left: 5px;
+    background:  #E8BA60;
+}
+
+.discount h3{
+    font-weight: 400;
+}
+
+.btn{
+    margin-top: 4rem;
+}
+
+.btn a{
+    background-color: #E8BA60;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 25%);
+}
+
+.btn a:last-child{
+    background-color: #FF7171;
+}
+
+footer{
+    position: absolute;
+    bottom: 1rem;
+    display: none ;
+}
