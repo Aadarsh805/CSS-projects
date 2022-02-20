@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 30%;
+  width: 40%;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -25,7 +25,7 @@ body {
 .container .inner {
   background-color: #07daa5;
   width: calc(100% - 2em);
-  padding: 1em;
+  padding: 5em;
   border-radius: 10px;
   -webkit-clip-path: inset(0% 0% 0% 100%);
           clip-path: inset(0% 0% 0% 100%);
